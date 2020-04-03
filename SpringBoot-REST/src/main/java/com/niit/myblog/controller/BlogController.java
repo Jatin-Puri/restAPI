@@ -23,7 +23,6 @@ public class BlogController {
 	{
 		return blogMockedData.fetchBlogs();
 	}
-	
 	@GetMapping("/blog/{id}")
 	public Blog show(@PathVariable String id){
 	int blogId = Integer.parseInt(id);
